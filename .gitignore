@@ -41,7 +41,7 @@ data = {
 
 
 df = pd.DataFrame(data)
-df.to_csv('python.ppt.csv', index=False)
+df.to_csv('python.ppt.csv')
 
 print(f"\nResults collected from {name}")
 print(df)
@@ -50,7 +50,7 @@ print(df)
 plt.figure(figsize=(6, 3))
 plt.barh(["Personality"], [1], color="Pink")
 plt.title(f"{name}'s Personality")
-plt.text(0.5, 0, personality, ha='center', va='center', fontsize=10, wrap=True)
+plt.text(0.5, 0, personality, ha='center', va='center', fontsize=10)
 plt.axis('off')
 plt.tight_layout()
 plt.show()
